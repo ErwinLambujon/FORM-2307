@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+.certificate-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+  text-align: center;
+}
+
+.tax-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.tax-table td,
+.tax-table th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tax-table th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.section-header {
+  background-color: #e9ecef;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.tin-input {
+  width: 60px !important;
+  text-align: center;
+  display: inline-block;
+}
+
+.zip-input {
+  width: 80px !important;
+}
+
+.payment-input {
+  text-align: right;
+}
+
+.readonly-input {
+  background-color: #f8f9fa;
+}
+
+.total-row {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.description-cell {
+  width: 30%;
+}
+
+.atc-cell {
+  width: 10%;
+}
+
+.payment-cell {
+  width: 12%;
+}
+
+span.note {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-top: 4px;
+}
+.signature-section {
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+}
+
+.signature-box {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.signature-line {
+  border-bottom: 1px solid #000;
+  margin: 1rem 0;
+  padding-top: 2rem;
+}
+
+.small-text-center {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
+.accreditation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.declaration-text {
+  padding: 1rem;
+  font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.date-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.date-box {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.conforme {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .certificate-container {
+    padding: 1rem;
+  }
+
+  .tax-table td,
+  .tax-table th {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .center-head {
+  }
+
+  .signature-section {
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+  }
+
+  .signature-box {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .signature-line {
+    border-bottom: 1px solid #000;
+    margin: 1rem 0;
+    padding-top: 2rem;
+  }
+
+  .small-text-center {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+  }
+
+  .accreditation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .declaration-text {
+    padding: 1rem;
+    font-size: 14px;
+    line-height: 1.4;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa;
+  }
+
+  .date-section {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .date-box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .conforme {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+}
